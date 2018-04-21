@@ -1,0 +1,43 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /
+  script: home.php
+
+- url: /conventions
+  script: conventions.php
+
+- url: /refsheet
+  script: refsheet.php
+
+- url: /gallery
+  script: gallery.php
+
+- url: /photos
+  script: photos.php
+
+- url: /shootouts
+  script: shootouts.php
+
+- url: /suitswap
+  script: suitswap.php
+
+- url: /zee
+  script: zee.php
+
+- url: /css
+  static_dir: css
+
+- url: /images
+  static_dir: images
+
+- url: /s
+  static_dir: static
+
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+
+- url: /.*
+  script: 404.php
